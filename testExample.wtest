@@ -5,11 +5,11 @@ import viaje.*
 describe "vehiculos" {
   test "rey de copas" {
     const reyDeCopas = new Torino()
-    reyDeCopas.velocidad(120)
+    reyDeCopas.velocidadMaxima(120)
     reyDeCopas.autonomia(300)
     assert.equals("Rojo", reyDeCopas.color())
     assert.equals(300, reyDeCopas.autonomia())
-    assert.equals(120, reyDeCopas.velocidad())
+    assert.equals(120, reyDeCopas.velocidadMaxima())
     assert.equals(4, reyDeCopas.capacidad())
     assert.equals(false, reyDeCopas.sillaDeRuedas())
     assert.equals(true, reyDeCopas.motorRuidoso())
@@ -17,11 +17,11 @@ describe "vehiculos" {
   test "academia"{
     const academia = new Torino()
     academia.color("Celeste")
-    academia.velocidad(110)
+    academia.velocidadMaxima(110)
     academia.autonomia(250)
     assert.equals("Celeste", academia.color())
     assert.equals(250, academia.autonomia())
-    assert.equals(110, academia.velocidad())
+    assert.equals(110, academia.velocidadMaxima())
     assert.equals(4, academia.capacidad())
     assert.notThat(academia.sillaDeRuedas())
     assert.that(academia.motorRuidoso())
